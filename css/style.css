@@ -188,6 +188,13 @@ a{
   margin: 5px;
 }
 
+.form-label{
+  color: #9f369a;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+}
+
 
 /* ########################################## @medias ######################################## */
 

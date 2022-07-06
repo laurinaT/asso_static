@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="d-flex flex-wrap justify-content-center">
+
+      <!-- SECTION contenant LOGO TEXTE + Bouton CONNEXION -->
+      <div class="d-flex flex-column container-fluid justify-content-center flex-md-row justify-content-md-between p-3">
+        <div class="d-flex flex-md-row md-w-50 justify-content-md-start">
+          <img src="img/logo_texte.png" class="logo-texte img-fluid w-75 align-self-center" alt="logo texte">
+        </div>
+        <div class="d-flex flex-md-row md-w-25 justify-content-center justify-content-md-end  g-4">
+        </div>
+      </div>
+
+      <!-- ########################################################################### -->
+
+
+      <!-- SECTION contenant LOGO SOLEIL -->
+      <div class="d-flex justify-content-center">
+        <div class="text-align-center w-75">
+          <img class="logo-soleil img-fluid" src="img/soleil.png" alt="logo soleil">
+        </div>
+      </div>
+      <!-- ########################################################################### -->
+
+      <!-- SECTION contenant ZIGUIGUI + H1 + ZIGUIGUI -->
+      <div class="d-flex container-fluid justify-content-center">
+        <div class="d-none ziguiguis ziguiguisg d-md-flex w-25 me-0"></div>
+        <div class="d-flex flex-column w-md-50 flex-wrap justify-content-center text-align-center">
+          <h1 class="text-center px-5">Quand un sourire suffit</h1>
+          <hr>
+        </div>
+        <div class="d-none ziguiguis ziguiguisd d-md-flex w-25 ms-0"></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h2 class="text-center">Face au handicap, créons du lien...</h2>
+      </div>
+    </div>
+    <!-- ########################################################################### -->
+
+    <!-- SECTION contenant NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-orange mt-5">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-md-flex justify-content-around collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_home') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_presentation') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_equipe') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="equipe.html">L'équipe</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_contact') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="contact.html">Contact</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Mentions légales</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+
+
+    <h1>Informations éditoriales</h1>
+      <p class="text-center px-3">
+      Éditeur
+      Association Quand un sourire suffit :
+      quandunsourire@gmail.com
+
+    26 Rue des Meulières,
+    77260 La Ferté-sous-Jouarre
+    Tél : 01 40 45 90 00</p>
+    <p class="text-center px-3">
+      Direction de publication
+      Association Quand un sourire suffit :
+      quandunsourire@gmail.com
+   26 Rue des Meulières,
+   77260 La Ferté-sous-Jouarre
+    Tél : 01 40 45 90 00
+    </p>
+    <h1>Protection et traitement de données à caractère personnel</h1>
+  <p class="text-center px-3">
+    Respect des lois en vigueur
+    Le site www.associations.gouv.fr respecte la vie privée de l’internaute et se conforme strictement aux lois en
+    vigueur
+    sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n’est collectée à
+    votre
+    insu. Aucune information personnelle n’est cédée à des tiers. Les courriels, les adresses électroniques ou autres
+    informations nominatives dont ce site est destinataire ne font l’objet d’aucune exploitation et ne sont conservés
+    que
+    pour la durée nécessaire à leur traitement.
+    </p>
+
+    <h1>Droit des internautes : droit d’accès et de rectification</h1>
+      <p class="text-center px-3">
+      Le ministère s’engage à ce que la collecte et le traitement de vos données, effectués à partir du site soient
+      conformes
+      au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.
+
+      Pour toute information ou exercice de vos droits Informatique et Libertés sur les traitements de données
+      personnelles,
+      vous pouvez nous contacter courriel à : quandunsourire@gmail.com
+      ou par courrier à l’adresse suivante :
+
+      Association Quand un sourire suffit
+    26 Rue des Meulières,
+    77260 La Ferté-sous-Jouarre</p>
+    <p class="text-center px-3">
+      La politique du site quandunsouriresuffit.com est en conformité avec la loi n°2004-575 du 21 juin 2004 pour la
+      confiance
+      dans l’économie numérique.
+    </p>
+
+    <h1>Cookies</h1>
+    <p class="text-center px-3">
+      Lors de la consultation de notre site quandunsouriresuffit.com, des cookies sont déposés sur votre ordinateur,
+      votre mobile
+      ou votre tablette.
+      Les seuls cookies utilisés par le site sont ceux destinés à la mesure d’audience et ne collectent pas de données
+      personnelles. Les outils de mesures d’audience sont déployés afin d’obtenir des informations sur la navigation des
+      visiteurs. Ils permettent notamment de comprendre comment les utilisateurs arrivent sur un site et de reconstituer
+      leur
+      parcours.
+
+      Définition d’un cookie
+      Un cookie est un fichier texte déposé sur votre ordinateur lors de la visite d’un site ou de la consultation d’une
+      publicité. Il a pour but de collecter des informations relatives à votre navigation et de vous adresser des
+      services
+      adaptés à votre terminal (ordinateur, mobile ou tablette). Les cookies sont gérés par votre navigateur internet.
+      Nous veillons dans la mesure du possible à ce que les prestataires de mesures d’audience respectent strictement la
+      loi
+      informatique et libertés du 6 janvier 1978 modifiée et s’engagent à mettre en œuvre des mesures appropriées de
+      sécurisation et de protection de la confidentialité des données.
+      Paramétrer votre navigateur internet
+      Vous pouvez à tout moment choisir de désactiver ces cookies. Votre navigateur peut également être paramétré pour
+      vous
+      signaler les cookies qui sont déposés dans votre ordinateur et vous demander de les accepter ou pas. Vous pouvez
+      accepter ou refuser les cookies au cas par cas ou bien les refuser systématiquement.
+      En cas de refus de depôt de cookie, vous ne pourrez pas consulter le site associations.gouv.fr. Afin de gérer les
+      cookies au plus près de vos attentes nous vous invitons à paramétrer votre navigateur en tenant compte de la
+      finalité
+      des cookies.</p>
+    <h1>Informations Prestataires</h1>
+    <p class="text-center px-3">
+      L’hébergement est assuré par l'Association Quand un sourire suffit'.
+      Le développement est assuré par l'Association Quand un sourire suffit.
+      La gestion des statistiques est assurée par l'Association Quand un sourire suffit.</p>
+
+    <h1>Droits d’auteur et droits de reproduction</h1>
+    <p class="text-center px-3">
+      Droits de reproduction des documents publics ou officiels
+      Depuis la publication de l’ordonnance n° 2005-650 du 6 juin 2005 relative à la liberté d’accès aux documents
+      administratifs et à la réutilisation des informations publiques, ces informations peuvent être réutilisées à
+      d’autres
+      fins que celles pour lesquelles elles ont été produites, et particulièrement les informations faisant l’objet
+      d’une
+      diffusion publique. Les documents publics ou officiels ne sont couverts par aucun droit d’auteur et peuvent donc
+      être
+      reproduits librement. Le graphisme, l’iconographie ainsi que le contenu éditorial demeurent la propriété de
+      l’État, et,
+      à ce titre, font l’objet des protections prévues par le Code de la propriété intellectuelle. Si la reprise de ces
+      contenus de façon partielle ou intégrale est autorisée, elle doit être obligatoirement assortie de la mention du
+      nom de
+      l’auteur, de la source, et éventuellement d’un lien renvoyant vers le document original en ligne sur le site. La
+      mention
+      "© www.associations.gouv.fr " devra donc être indiquée. Tous les autres contenus présents sur le site sont
+      couverts par
+      le droit d’auteur. Toute reprise est dès lors conditionnée à l’accord de l’auteur en vertu de l’article L.122-4 du
+      Code
+      de la propriété Intellectuelle. Les informations utilisées ne doivent l’être qu’à des fins personnelles,
+      associatives ou
+      professionnelles ; toute diffusion ou utilisation à des fins commerciales ou publicitaires étant interdites.</p>
+
+
+    <h1>Environnement technique</h1>
+    <p class="text-center px-3">
+      Ce site est optimisé pour un affichage en 1024x768. Il est prévu pour les principaux navigateurs Google Chrome et
+      Mozilla Firefox.
+
+    </p>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="container-fluid">
+    <footer class="py-3 mt-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="presentation.html" class="nav-link px-2 text-muted">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a href="equipe.html" class="nav-link px-2 text-muted">L'équipe</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="mentions.html" class="nav-link px-2 text-muted">Mentions légales</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Quand un sourire suffit...</p>
+    </footer>
+  </div>
