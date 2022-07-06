@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div class="d-flex flex-wrap justify-content-center">
+
+      <!-- SECTION contenant LOGO TEXTE + Bouton CONNEXION -->
+      <div class="d-flex flex-column container-fluid justify-content-center flex-md-row justify-content-md-between p-3">
+        <div class="d-flex flex-md-row md-w-50 justify-content-md-start">
+          <img src="img/logo_texte.png" class="logo-texte img-fluid w-75 align-self-center" alt="logo texte">
+        </div>
+        <div class="d-flex flex-md-row md-w-25 justify-content-center justify-content-md-end  g-4">
+        </div>
+      </div>
+
+      <!-- ########################################################################### -->
+
+
+      <!-- SECTION contenant LOGO SOLEIL -->
+      <div class="d-flex justify-content-center">
+        <div class="text-align-center w-75">
+          <img class="logo-soleil img-fluid" src="img/soleil.png" alt="logo soleil">
+        </div>
+      </div>
+      <!-- ########################################################################### -->
+
+      <!-- SECTION contenant ZIGUIGUI + H1 + ZIGUIGUI -->
+      <div class="d-flex container-fluid justify-content-center">
+        <div class="d-none ziguiguis ziguiguisg d-md-flex w-25 me-0"></div>
+        <div class="d-flex flex-column w-md-50 flex-wrap justify-content-center text-align-center">
+          <h1 class="text-center px-5">Quand un sourire suffit</h1>
+          <hr>
+        </div>
+        <div class="d-none ziguiguis ziguiguisd d-md-flex w-25 ms-0"></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h2 class="text-center">Face au handicap, créons du lien...</h2>
+      </div>
+    </div>
+    <!-- ########################################################################### -->
+
+    <!-- SECTION contenant NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-orange mt-5">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-md-flex justify-content-around collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_home') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_presentation') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_equipe') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="equipe.html">L'équipe</a>
+            </li>
+            <li class="nav-item mx-2 mx-lg-4">
+              <a class="nav-link {{ path('app_contact') == path(app.request.attributes.get('_route')) ? 'active' : '' }}"
+                href="contact.html">Contact</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+<section class="d-flex flex-column p-5">
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Qui sommes-nous ?</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Lorem sunt mollit laborum minim commodo irure incididunt ut sit velit incididunt id et. Ad excepteur amet enim id
+      ullamco cillum mollit laborum et laborum laboris. Deserunt mollit ad consequat Lorem esse dolor ad veniam ipsum eu
+      cillum ea ea. Et Lorem enim in nostrud ipsum officia tempor labore et aliquip aliqua. Amet dolore laborum esse
+      pariatur pariatur nisi est irure cupidatat commodo ea sit cillum velit.
+    </p>
+  </div>
+  <div class="d-flex flex-row justify-content-center p-3">
+    <div class="d-flex justify-content-center">
+      <img src="img/presentation/photo_asso_1.jpg" class="img-fluid rounded border-orange" alt="logo texte">
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Eiusmod ad ea mollit duis. Irure culpa dolore nisi anim mollit velit commodo irure. Irure nisi cillum nulla ea
+      duis eiusmod cupidatat culpa reprehenderit velit est ullamco. Lorem anim minim aliquip aute occaecat consectetur
+      dolore est velit. Amet occaecat non incididunt dolor amet sint consequat esse excepteur anim minim minim
+      consequat. Cillum sint veniam Lorem laborum in elit do occaecat nostrud eiusmod esse. Nostrud aute qui elit
+      incididunt sunt ipsum esse laborum.
+    </p>
+  </div>
+
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Nos objectifs</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Lorem sunt mollit laborum minim commodo irure incididunt ut sit velit incididunt id et. Ad excepteur amet enim id
+      ullamco cillum mollit laborum et laborum laboris. Deserunt mollit ad consequat Lorem esse dolor ad veniam ipsum eu
+      cillum ea ea. Et Lorem enim in nostrud ipsum officia tempor labore et aliquip aliqua. Amet dolore laborum esse
+      pariatur pariatur nisi est irure cupidatat commodo ea sit cillum velit.
+    </p>
+  </div>
+  <div class="d-flex flex-row justify-content-center p-3">
+    <div class="d-flex justify-content-center">
+      <img src="img/presentation/photo_asso_2.jpg" class="img-fluid rounded border-orange" alt="logo texte">
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Eiusmod ad ea mollit duis. Irure culpa dolore nisi anim mollit velit commodo irure. Irure nisi cillum nulla ea
+      duis eiusmod cupidatat culpa reprehenderit velit est ullamco. Lorem anim minim aliquip aute occaecat consectetur
+      dolore est velit. Amet occaecat non incididunt dolor amet sint consequat esse excepteur anim minim minim
+      consequat. Cillum sint veniam Lorem laborum in elit do occaecat nostrud eiusmod esse. Nostrud aute qui elit
+      incididunt sunt ipsum esse laborum.
+    </p>
+  </div>
+
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Nos valeurs</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Lorem sunt mollit laborum minim commodo irure incididunt ut sit velit incididunt id et. Ad excepteur amet enim id
+      ullamco cillum mollit laborum et laborum laboris. Deserunt mollit ad consequat Lorem esse dolor ad veniam ipsum eu
+      cillum ea ea. Et Lorem enim in nostrud ipsum officia tempor labore et aliquip aliqua. Amet dolore laborum esse
+      pariatur pariatur nisi est irure cupidatat commodo ea sit cillum velit.
+    </p>
+  </div>
+  <div class="d-flex flex-row justify-content-center p-3">
+    <div class="d-flex justify-content-center">
+      <img src="img/presentation/photo_asso_3.jpg" class="img-fluid rounded border-orange" alt="logo texte">
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Eiusmod ad ea mollit duis. Irure culpa dolore nisi anim mollit velit commodo irure. Irure nisi cillum nulla ea
+      duis eiusmod cupidatat culpa reprehenderit velit est ullamco. Lorem anim minim aliquip aute occaecat consectetur
+      dolore est velit. Amet occaecat non incididunt dolor amet sint consequat esse excepteur anim minim minim
+      consequat. Cillum sint veniam Lorem laborum in elit do occaecat nostrud eiusmod esse. Nostrud aute qui elit
+      incididunt sunt ipsum esse laborum.
+    </p>
+  </div>
+
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Notre histoire</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Lorem sunt mollit laborum minim commodo irure incididunt ut sit velit incididunt id et. Ad excepteur amet enim id
+      ullamco cillum mollit laborum et laborum laboris. Deserunt mollit ad consequat Lorem esse dolor ad veniam ipsum eu
+      cillum ea ea. Et Lorem enim in nostrud ipsum officia tempor labore et aliquip aliqua. Amet dolore laborum esse
+      pariatur pariatur nisi est irure cupidatat commodo ea sit cillum velit.
+    </p>
+  </div>
+  <div class="d-flex flex-row justify-content-center p-3">
+    <div class="d-flex justify-content-center">
+      <img src="img/presentation/photo_asso_4.jpg" class="img-fluid rounded border-orange" alt="logo texte">
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center mt-md-5">
+    <p class="text-center px-3">
+      Eiusmod ad ea mollit duis. Irure culpa dolore nisi anim mollit velit commodo irure. Irure nisi cillum nulla ea
+      duis eiusmod cupidatat culpa reprehenderit velit est ullamco. Lorem anim minim aliquip aute occaecat consectetur
+      dolore est velit. Amet occaecat non incididunt dolor amet sint consequat esse excepteur anim minim minim
+      consequat. Cillum sint veniam Lorem laborum in elit do occaecat nostrud eiusmod esse. Nostrud aute qui elit
+      incididunt sunt ipsum esse laborum.
+    </p>
+  </div>
+</section>
+
+
+  <!-- /* ------------------------------------- Footer ------------------------------------- */ -->
+
+  <div class="d-flex flex-row justify-content-center">
+    <h3>Nos très chers partenaires !</h3>
+  </div>
+  <div class="d-flex flex-row justify-content-center mb-5">
+    <hr class="w-25 text-center bg-yellow">
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-center">
+    <img src="img//footer/caf-logo.png" class="img-thumbnail" alt="...">
+    <img src="img//footer/favicon-la-ferte-sous-jouarre.png" class="img-thumbnail" alt="...">
+    <img src="img//footer/logo_makaton.jpg" class="img-thumbnail" alt="...">
+    <img src="img//footer/caf-logo.png" class="img-thumbnail" alt="...">
+    <img src="img//footer/logo_seine_et_marne.jpg" class="img-thumbnail" alt="...">
+    <img src="img//footer/favicon-la-ferte-sous-jouarre.png" class="img-thumbnail" alt="...">
+    <img src="img//footer/caf-logo.png" class="img-thumbnail" alt="...">
+    <img src="img/footer/logo_seine_et_marne.jpg" class="img-thumbnail" alt="...">
+    <img src="img//footer/favicon-la-ferte-sous-jouarre.png" class="img-thumbnail" alt="...">
+  </div>
+
+
+  <div class="container-fluid">
+    <footer class="py-3 mt-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Mentions légales</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Quand un sourire suffit...</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
