@@ -39,7 +39,7 @@
 
 .border-yellow {
   border: solid 2px var(--yellow);
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .btn-yellow {
